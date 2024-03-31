@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #181818;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        height:fit-content;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        background-color:#fff;
+        
+        align-items: center;
+        border-radius: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        gap: 0px;
+    }
+    input,.form-select{
+        height: 30px;
+        width: 350px;
+        
+        
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    button{
+        height: 30px;
+        width: 350px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgba(12, 12, 12, 0.963);
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        margin: 15px;
+    }
+    p{
+        margin-bottom: 2px;
+    }
+</style>
+<body>
+    <div class="box">
+        <h2>Signup</h2>
+        <div>
+            <p>Name:</p>
+            <input type="name">
+        </div>
+        <div>
+            <p>batch:</p>
+            <div class="input-group ">
+                
+                <select class="form-select" id="inputGroupSelect03">
+                  <option selected>Choose...</option>
+                  <option value="1">Sigma 1.0</option>
+                  <option value="2">Sigma 2.0</option>
+                  <option value="3">Sigma 3.0</option>
+                </select>
+              </div>
+        </div>
+        <div>
+            <p>Age:</p>
+            <input type="number">
+        </div>
+        <div>
+            <p>Email:</p>
+            <input type="email">
+        </div>
+        <div>
+            <p>Password:</p>
+            <input type="password">
+        </div>
+        <button type="submit" class="butt">Signup</button>       
+
+    </div>
+</body>
+</html>
